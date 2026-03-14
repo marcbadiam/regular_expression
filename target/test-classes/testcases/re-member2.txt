@@ -1,8 +1,8 @@
-/*
-    Specify an NFA with exactly four states that recognizes the following language 
-    over binary strings: 
-    L={ w | w contains either 11 or 00 as a substring} 
+/* 
+    Member 2: Regular expression for binary strings containing "11" or "00"
+    Language: L = {w | w contains either 11 or 00 as a substring}
+    NFA with exactly 4 states
 */
+[0-1]*(11|00)[0-1]*
 
-
-/*Write your full name here: ...*/
+/* Member name: Team Member 2 */

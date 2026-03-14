@@ -1,6 +1,8 @@
-/*
-    Specify an NFA with exactly three states that recognizes the following language 
-    over binary strings: 
-    L= {w | w contains the substring 101 anywhere}. 
+/* 
+    Member 1: Regular expression for binary strings containing "101"
+    Language: L = {w | w contains the substring 101 anywhere}
+    NFA with exactly 3 states
 */
+[0-1]*101[0-1]*
 
+/* Member name: Team Member 1 */

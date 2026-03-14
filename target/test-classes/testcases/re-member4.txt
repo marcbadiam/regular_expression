@@ -1,7 +1,7 @@
-/*
-    Specify an NFA that recognizes the following language 
-    over binary strings: 
-    L= {w | w starts with 1 and has at least three 1s total}. 
+/* 
+    Member 4: Regular expression for binary strings starting with 1 and having at least three 1s
+    Language: L = {w | w starts with 1 and has at least three 1s total}
 */
+1[0-1]*1[0-1]*1[0-1]*
 
-/*Write your full name here: ...*/
+/* Member name: Team Member 4 */

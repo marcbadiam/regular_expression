@@ -1,7 +1,8 @@
-/*
-    Specify an NFA with exactly six states that recognizes the following language 
-    over binary strings: 
-    L= {w | w contains at least two zeros (not necessarily consecutive)}. 
+/* 
+    Member 3: Regular expression for binary strings with at least two zeros
+    Language: L = {w | w contains at least two zeros (not necessarily consecutive)}
+    NFA with exactly 6 states
 */
+[0-1]*0[0-1]*0[0-1]*
 
-/*Write your full name here: ...*/
+/* Member name: Team Member 3 */
