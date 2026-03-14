@@ -192,4 +192,31 @@ public class NFA {
         }
         return labels;
     }
+
+    public Set<String> getStates() {
+        return new HashSet<>(Arrays.asList(states));
+    }
+
+    public Set<String> getFinalStates() {
+        return new HashSet<>(Arrays.asList(estatsFinals).subList(0, numEFinals));
+    }
+
+    public void addNFA(NFA other) {
+        // Añadir estados del otro NFA
+        Set<String> allStates = new HashSet<>(Arrays.asList(this.states));
+        allStates.addAll(other.getStates());
+        this.states = allStates.toArray(new String[0]);
+
+        // Añadir transiciones del otro NFA
+        for (String state : other.getStates()) {
+            Map<Character, Set<String>> trans = other.taulaTransicions.get(state);
+            if (trans != null) {
+                for (Map.Entry<Character, Set<String>> entry : trans.entrySet()) {
+                    for (String target : entry.getValue()) {
+                        this.addTransition(state, entry.getKey(), target);
+                    }
+                }
+            }
+        }
+    }
 }
